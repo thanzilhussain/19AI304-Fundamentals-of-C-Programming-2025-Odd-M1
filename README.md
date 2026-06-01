@@ -4,7 +4,7 @@
 ## 2. Implementation of different categories of operators.
 # Ex.No:1
   Build a C program to demonstrate the usage of different types of literals: integer, float, character, and string.  
-# Date : 
+# Date : 22/04/2026
 # Aim:
 To build a C program that prints integer, float,character, and string literals on the console using the printf() function.
 # Algorithm:
@@ -26,7 +26,30 @@ To build a C program that prints integer, float,character, and string literals o
 ### Step 4: 
    Stop
 # Program:
+```
+#include <stdio.h>
+
+int main()
+{
+    int a = 10;
+    float b = 25.5;
+    char ch = 'A';
+    char str[] = "Saveetha";
+
+    printf("Integer Literal : %d\n", a);
+    printf("Float Literal : %.2f\n", b);
+    printf("Character Literal : %c\n", ch);
+    printf("String Literal : %s\n", str);
+
+    return 0;
+}
+```
+
 # Output:
+
+<img width="271" height="135" alt="Screenshot 2026-05-25 113215" src="https://github.com/user-attachments/assets/5ed0d0a3-810e-4f1b-adf8-b7fe518d35e2" />
+
+
 # Result: 
 Thus, the program was implemented and executed successfully, and the required output was obtained.
 
@@ -35,7 +58,7 @@ Thus, the program was implemented and executed successfully, and the required ou
 # IAPR-1- Module 1 - FoC
 # Ex.No:2
   Build a C program to display the value of a macro constant and a constant variable.
-# Date : 
+# Date : 22/04/2026
 # Aim:
   To build a C program that demonstrates the use of macro constants and constant variables.
 # Algorithm:
@@ -57,7 +80,26 @@ Thus, the program was implemented and executed successfully, and the required ou
 ### Step 6:  
   Stop
 # Program:
+```
+#include<stdio.h>
+
+#define PI 3.14159
+
+int main()
+{
+    const int DAYS = 7;
+
+    printf("Value of PI = %.5f\n", PI);
+    printf("Value of DAYS = %d\n", DAYS);
+
+    return 0;
+}
+```
 # Output:
+```
+Value of PI = 3.14159
+Value of DAYS = 7
+```
 # Result: 
 Thus, the program was implemented and executed successfully, and the required output was obtained.
 
@@ -66,7 +108,7 @@ Thus, the program was implemented and executed successfully, and the required ou
 # IAPR-1- Module 1 - FoC
 # Ex.No:3
   Build a C program to demonstrate the use of different data types such as int, float, double, and char, and display their values using printf().
-# Date : 
+# Date : 22/04/2026
 # Aim:
   To build a C program that declares variables of various data types—integer, float, double, and character—initializes them, and prints their values on the screen.
 # Algorithm:
@@ -81,14 +123,38 @@ Thus, the program was implemented and executed successfully, and the required ou
 ### Step 5:    
    Stop
 # Program:
+```
+#include<stdio.h>
+
+int main()
+{
+    int a = 10;
+    float b = 5.5f;
+    double c = 25.6789;
+    char d = 'A';
+
+    printf("Integer value = %d\n", a);
+    printf("Float value = %.2f\n", b);
+    printf("Double value = %.4lf\n", c);
+    printf("Character value = %c\n", d);
+
+    return 0;
+}
+```
 # Output:
+```
+Integer value = 10
+Float value = 5.50
+Double value = 25.6789
+Character value = A
+```
 # Result: 
 
 # 19AI304-Fundamentals-of-C-Programming-2025-Odd
 # IAPR-1- Module 1 - FoC
 # Ex.No:4
   Build a C program to perform arithmetic and bitwise operations on two integers entered by the user. The program should display: Arithmetic operations: addition, subtraction, multiplication, division, and remainder. Bitwise operations: AND, OR, XOR, left shift, right shift, and NOT.
-# Date : 
+# Date : 22/04/2026
 # Aim:
   To build a C program that takes two integers as input and demonstrates the arithmetic and bitwise operations, displaying the results of each operation.
 # Algorithm:
@@ -120,7 +186,57 @@ Thus, the program was implemented and executed successfully, and the required ou
 ### Step 8:   
   Stop
 # Program:
+```
+#include<stdio.h>
+
+int main()
+{
+    int a, b;
+
+    printf("Enter two integers: ");
+    scanf("%d %d", &a, &b);
+
+    // Arithmetic operations
+    printf("\nArithmetic Operations\n");
+    printf("Addition = %d\n", a + b);
+    printf("Subtraction = %d\n", a - b);
+    printf("Multiplication = %d\n", a * b);
+    printf("Division = %d\n", a / b);
+    printf("Remainder = %d\n", a % b);
+
+    // Bitwise operations
+    printf("\nBitwise Operations\n");
+    printf("AND = %d\n", a & b);
+    printf("OR = %d\n", a | b);
+    printf("XOR = %d\n", a ^ b);
+    printf("Left Shift = %d\n", a << b);
+    printf("Right Shift = %d\n", a >> b);
+    printf("Bitwise NOT of a = %d\n", ~a);
+    printf("Bitwise NOT of b = %d\n", ~b);
+
+    return 0;
+}
+```
 # Output:
+```
+Enter two integers: 10 5
+
+Arithmetic Operations
+Addition = 15
+Subtraction = 5
+Multiplication = 50
+Division = 2
+Remainder = 0
+
+Bitwise Operations
+AND = 0
+OR = 15
+XOR = 15
+Left Shift = 320
+Right Shift = 0
+Bitwise NOT of a = -11
+Bitwise NOT of b = -6
+```
 # Result: 
 Thus, the program was implemented and executed successfully, and the required output was obtained.
 
@@ -129,7 +245,7 @@ Thus, the program was implemented and executed successfully, and the required ou
 # IAPR-1- Module 1 - FoC
 # Ex.No:5
   Develop a C program to check whether a given character is a vowel, consonant, digit, or special symbol using the ternary operator.
-# Date : 
+# Date : 22/04/2026
 # Aim:
   To develop and implement a C program that classifies a character as a vowel, consonant, digit, or special symbol using the ternary operator.
 # Algorithm:
@@ -165,7 +281,37 @@ Thus, the program was implemented and executed successfully, and the required ou
 ### Step 8:   
   Stop
 # Program:
+```
+#include<stdio.h>
+
+int main()
+{
+    char ch;
+
+    printf("Enter a character: ");
+    scanf("%c", &ch);
+
+    (ch >= '0' && ch <= '9') ?
+        printf("Digit") :
+
+        ((ch >= 'A' && ch <= 'Z') || (ch >= 'a' && ch <= 'z')) ?
+
+            ((ch == 'A' || ch == 'E' || ch == 'I' || ch == 'O' || ch == 'U' ||
+              ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u') ?
+
+                printf("Vowel") :
+                printf("Consonant"))
+
+        : printf("Special Symbol");
+
+    return 0;
+}
+```
 # Output:
+```
+Enter a character: A
+Vowel
+```
 # Result: 
 Thus, the program was implemented and executed successfully, and the required output was obtained.
 
